@@ -61,7 +61,7 @@ class _NavbarItemState extends State<NavbarItem> {
                 selectedd:_selectedIndex==3,
                 onPressedd:(){
                   setState(() {
-                    _selectedIndex==3;
+                    _selectedIndex=3;
                   });
                 },
               ),
@@ -70,7 +70,7 @@ class _NavbarItemState extends State<NavbarItem> {
                 selectedd:_selectedIndex==4,
                 onPressedd:(){
                   setState(() {
-                    _selectedIndex==4;
+                    _selectedIndex=4;
                   });
                 },
               ),

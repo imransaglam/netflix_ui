@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:spotify_ui/navbar.dart';
+import 'package:spotify_ui/widgets/navbar.dart';
 import 'package:spotify_ui/widgets/listviewitem.dart';
 import 'package:spotify_ui/widgets/listviewitem1.dart';
 import 'package:spotify_ui/widgets/listviewitem2.dart';
