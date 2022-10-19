@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import 'homescreen.dart';
 
@@ -12,10 +13,16 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+   return ResponsiveSizer(builder: (context,orientation,screenType){
+return MaterialApp(
+  debugShowCheckedModeBanner: false,
       home: HomeScreen(),
-    );
-  }
+
+);
+   },);
+       
+    }
+   
+ 
 }
 

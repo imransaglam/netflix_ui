@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
+
 
 class TrendingMovie extends StatefulWidget {
   final String image;
@@ -16,9 +18,7 @@ class _TrendingMovieState extends State<TrendingMovie> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 10),
-      width: 100,
-      height: 150,
+     padding: EdgeInsets.only(left: 1.w),
       child: Image.asset(widget.image),
     );
   }
