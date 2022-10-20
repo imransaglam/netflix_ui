@@ -48,22 +48,36 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 18.h,
               child: Stack(
                 children: [
-                   Image.asset("assets/backgroundimage.png"),
-                   Positioned(top:6.h,left:28.w,child: Text("NETFLIX",style: TextStyle(color:Color(0xffFF2929),fontSize: 41.31,fontWeight: FontWeight.w700,fontFamily: 'Red Rose'),))
+                   Container(
+                    child: Image.asset("assets/images/backgroundimage.png")),
+                    Container(
+                      width: 428,height: 116,
+                      decoration: BoxDecoration(
+                        gradient:LinearGradient(
+                          colors: [
+                            Color(0xff5C5B5B).withOpacity(0.73),
+                            Colors.white.withOpacity(0),
+                          ],
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter
+                          )
+                      ),
+                    ),
+                   Positioned(top:5.h,left:28.w,child: Text("NETFLIX",style: TextStyle(color:Color(0xffFF2929),fontSize: 41.31,fontWeight: FontWeight.w700,fontFamily: 'Red Rose'),)),
                 ],
               ), 
             ),
-            SizedBox(height: 2.h,),
+            //SizedBox(height: 1.h,),
             Padding(
               padding: const EdgeInsets.only(left: 15),
-              child: Text("Trending",style: TextStyle(color: Colors.white,fontSize: 20.72,fontFamily: 'Red Rose'),),
+              child: Text("Trending",style: TextStyle(color: Colors.white,fontSize: 18.sp,fontFamily: 'Red Rose'),),
             ),
             SizedBox(height: 1.h,),
             Container(
               width: 100.w,
-              height:25.h,
+              height:20.h,
               child: ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
+                
                 scrollDirection: Axis.horizontal,
                 itemCount: images.length,
                 itemBuilder: ((context, index) {
@@ -75,14 +89,13 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 3.h),
              Padding(
                padding: const EdgeInsets.only(left:15),
-               child: Text("Netflix Originals",style: TextStyle(fontSize: 20.72,color:Colors.white,fontWeight: FontWeight.w400,fontFamily:'Red Rose' ),),
+               child: Text("Netflix Originals",style: TextStyle(fontSize:  18.sp,color:Colors.white,fontWeight: FontWeight.w400,fontFamily:'Red Rose' ),),
              ),
               SizedBox(height: 1.h,),
              Container(
                width: 100.w,
-              height:25.h,
+              height:20.h,
               child: ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemCount: images1.length,
                 itemBuilder: ((context, index) {
@@ -92,14 +105,13 @@ class _HomeScreenState extends State<HomeScreen> {
              SizedBox(height: 3.h,),
              Padding(
                padding: const EdgeInsets.only(left:15),
-               child: Text("Popular on Netflix",style: TextStyle(color: Colors.white,fontSize: 20.72,fontWeight: FontWeight.w400,fontFamily: 'Red Rose'),),
+               child: Text("Popular on Netflix",style: TextStyle(color: Colors.white,fontSize: 18.sp,fontWeight: FontWeight.w400,fontFamily: 'Red Rose'),),
              ),
              SizedBox(height: 1.h,),
              Container(
                width: 100.w,
-              height:25.h,
+              height:20.h,
               child: ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemCount: images2.length,
                 itemBuilder: ((context, index) {

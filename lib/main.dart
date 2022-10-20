@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_ui/details.dart';
 
 import 'homescreen.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
    return ResponsiveSizer(builder: (context,orientation,screenType){
 return MaterialApp(
   debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: DetailsScreen(),
 
 );
    },);
