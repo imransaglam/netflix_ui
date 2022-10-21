@@ -46,7 +46,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             children: [
               Container(child: Image.asset("assets/images/backgroundimage2.png")),
               Container(
-                        width: 428,height: 269,
+                        width: 428,height: 257,
                         decoration: BoxDecoration(
                           gradient:LinearGradient(
                             colors: [
@@ -108,7 +108,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         width: 330,
                         height: 100,
                         child: Text("Transformers is a series of American science fiction action films based on the Transformers franchise, which began in the 1980s. ",
-                        style: TextStyle(color: Colors.white,fontSize: 18.99,fontFamily: 'Roboto',fontWeight: FontWeight.w100),),
+                        style: TextStyle(color: Colors.white,fontSize: 18.99,),),
                       ),
              ),
                     Padding(
